@@ -23,7 +23,7 @@ context?).</p>
 </ul>
 <h2 id="what-does-a-compiler-do">What does a compiler do?</h2>
 <p>Let’s consider the following code (It’s written in C#)</p>
-<p><img src="/chapter-01/what-compiler-does.png" alt="Image"></p>
+<p><img src="./chapter-01/what-compiler-does.png" alt="Image"></p>
 <p><img src= src=src={process.env.PUBLIC_URL + '/img/logo.png'}  alt="Image"></p>
 
 
@@ -41,7 +41,7 @@ intermediate code known as object code.</li>
 </ol>
 <h2 id="compilation-phases">Compilation Phases</h2>
 <p>From development through execution, a computer program passes through several stages. From human-readable source code to binary-encoded computer instructions (machine code). This section will go over the many stages of a program’s life cycle.</p>
-<p><img src="/chapter-01/54fc720d-078c-4c3d-a19b-d27efc3006d2_smallRaw.png" alt="Image"></p>
+<p><img src="./chapter-01/54fc720d-078c-4c3d-a19b-d27efc3006d2_smallRaw.png" alt="Image"></p>
 <ol>
 <li>Lexical Analysis ( characters <em>→</em> words)</li>
 <li>Syntax Analysis (words <em>→</em> sentences)</li>
@@ -74,7 +74,7 @@ intermediate code known as object code.</li>
 <li>Numbers, e.g. 123</li>
 <li>Operators, e.g. &lt;=</li>
 </ul>
-<p><img src="/chapter-01/lexical.png" alt="Image"></p>
+<p><img src="./chapter-01/lexical.png" alt="Image"></p>
 <ul>
 <li>Done by the lexer, also called a scanner</li>
 <li>Identifies lexeme within the source code</li>
@@ -89,7 +89,7 @@ intermediate code known as object code.</li>
     <span class="token punctuation">}</span>
 
 </code></pre>
-<p><img src="/chapter-01/5c627d3b-98ab-4f3c-a928-2f1b53915ec4_smallRaw.png" alt="Image"></p>
+<p><img src="./chapter-01/5c627d3b-98ab-4f3c-a928-2f1b53915ec4_smallRaw.png" alt="Image"></p>
 <div class="alert-info">
 </div><p>It will convert the <em>linear</em> string of tokens into <em>structured</em><br>
 representations such as expression trees and program flow graphs.</p>
@@ -118,7 +118,7 @@ program).</p>
 
     <span class="token punctuation">}</span>
 </code></pre>
-<p><img src="/chapter-01/download.png" alt="Image"></p>
+<p><img src="./chapter-01/download.png" alt="Image"></p>
 <h2 id="intermediate-code-generation">Intermediate Code Generation</h2>
 <p>Intermediate code generation is a phase in the compilation process where the source code is translated into an intermediate language or code that is easier to analyze and optimize than the original source code. The main purpose of intermediate code generation is to transform the source code into a form that can be efficiently processed by subsequent compiler phases, such as optimization and target code generation.</p>
 <p>The intermediate code is typically represented in a language-agnostic format, which means that it is independent of the source programming language and the target platform. This allows the same intermediate code to be used for different source languages and target platforms, which can save development time and effort.</p>
@@ -175,7 +175,7 @@ Let’s consider an example in C# to understand this better. Suppose you have th
 <p>Unlike a compiler, an interpreter does not translate the entire code at once. Instead, it scans the complete source code in one go. Single instructions are converted to machine code or intermediate code. The translated machine code instruction is then immediately executed, and if necessary, the next instruction is translated.</p>
 <h2 id="compilers-vs-interpreters">Compilers vs interpreters</h2>
 <p>Interpreters are a second way to run programs, but they run differently. See the below image for the working of these two.</p>
-<p><img src="/chapter-01/c-i.png" alt="Image"></p>
+<p><img src="./chapter-01/c-i.png" alt="Image"></p>
 <div class="alert-info">
 </div><p>Compilers can optimize the code during the compilation process, which results in faster and more efficient code. Once the optimization is done, the optimized code can be executed multiple times without having to redo the optimizations. This is because the optimized code is saved as a binary file that can be executed directly on the target machine without the need for <a href="http://re-optimization.In">re-optimization.In</a> contrast, interpreters do not perform any optimization during the parsing and execution of the code. Instead, they interpret the code line-by-line and perform the necessary operations for each line as they encounter it. This results in slower execution times compared to compiled code.</p>
  
