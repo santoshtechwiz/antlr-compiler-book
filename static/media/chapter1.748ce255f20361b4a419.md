@@ -1,5 +1,5 @@
 
-  <div class="stackedit__html"><h1 id="compiler-basics">Compiler Basics</h1>
+<h1 id="compiler-basics">Compiler Basics</h1>
 <p>This chapter will look at What a compiler does and why we need them.<br>
 Data flow between the parts of a compiler and what they do. The first thing always comes to your mind is why we need the compiler. We need it Because a computer cannot directly understand source code. As a result, the compiler acts as a bridge between human-readable and machine-readable formats. The compiler will parse the source file and convert it to a machine-readable object file.</p>
 <h2 id="why-study-compilers">Why Study Compilers?</h2>
@@ -181,6 +181,4 @@ Let’s consider an example in C# to understand this better. Suppose you have th
  
 <div class="alert-info">
 </div><p>Interpreters are often preferred over compilers due to their simplicity and ease of use. They allow for a streamlined development process as they do not require a separate compilation step, and often provide more helpful error messages than compilers. Interpreted code is also more flexible, allowing for dynamic changes to the code at runtime. However, interpreted code tends to be slower and less secure than compiled code, which can be a disadvantage in some scenarios. Ultimately, the choice between an interpreter and a compiler depends on the specific needs and requirements of the project.</p>
-
-</div>
 
