@@ -24,7 +24,10 @@ context?).</p>
 <h2 id="what-does-a-compiler-do">What does a compiler do?</h2>
 <p>Let’s consider the following code (It’s written in C#)</p>
 <p><img src="/chapter-01/what-compiler-does.png" alt="Image"></p>
-<p>Apart from translating source code from high-level to low-level language, the compiler also has other responsibilities. After reading the source code written in the high-level language, it performs the below operations -</p>
+<p><img src= src=src={process.env.PUBLIC_URL + '/img/logo.png'}  alt="Image"></p>
+
+
+<p>Apart from translating source code from high-level to low-level language, the compiler also has other responsibilities. After reading the source code written in the high-level language, it performs the below operations -</p> 
 <ol>
 <li>Performs source code pre-processing. Collect all of the files needed<br>
 for the source code to compile.</li>
