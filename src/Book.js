@@ -52,7 +52,7 @@ const Book = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename="/">
       <div className="book-container">
         <nav className="book-nav">
           <NavLink to="/">Introduction</NavLink>
