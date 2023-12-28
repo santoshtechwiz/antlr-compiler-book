@@ -16,10 +16,7 @@ import Chapter2 from "./chapter2.md";
 const Chapter = ({ title, content }) => (
   <section className="book-chapter" data-aos="fade-up">
     <h2 className="title">{title}</h2>
-    <div
-      className="stackedit"
-      dangerouslySetInnerHTML={{ __html: content }}
-    />
+    <div className="stackedit" dangerouslySetInnerHTML={{ __html: content }} />
   </section>
 );
 
@@ -55,15 +52,21 @@ const Book = () => {
     <Router basename="/">
       <div className="book-container">
         <nav className="book-nav">
+         
           <NavLink to="/">Introduction</NavLink>
           <NavLink to="/chapter1">Chapter 1</NavLink>
           <NavLink to="/chapter2">Chapter 2</NavLink>
+          <div className="buy-section">
+            <button className="buy-button">Buy Now</button>
+            <p className="price">$19.99</p>
+          </div>
         </nav>
+
         <div className="book-content">
           <Routes>
             <Route
               path="/"
-              element={<Chapter title="Introduction" content={introContent} />}
+              element={<Chapter title="" content={introContent} />}
             />
             <Route
               path="/chapter1"

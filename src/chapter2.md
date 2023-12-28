@@ -68,10 +68,10 @@ syntactic variable.</p>
 <li>Text-based means a program can also read it.</li>
 </ul>
 <p>EBNF Uses certain meta-symbols shown in the below image</p>
-<p><img src="/chapter-02/desc-ebnf-g.png" alt="Image"></p>
+<p><img src="./chapter-02/desc-ebnf-g.png" alt="Image"></p>
 <h2 id="example-1">Example 1</h2>
 <p>Let’s consider the following grammar that validates the if statement in the program. As shown below, you can write the grammar for the if statement in EBNF format.</p>
-<p><img src="/chapter-02/7af9542e-fe15-4031-adbc-96d6e9e3fbe6_smallRaw.png" alt="Image"></p>
+<p><img src="./chapter-02/7af9542e-fe15-4031-adbc-96d6e9e3fbe6_smallRaw.png" alt="Image"></p>
 <blockquote>
 <p>EBNF FOR IF STATEMENT</p>
 </blockquote>
@@ -203,7 +203,7 @@ grammar whose production rules are of the form.</p>
 
 <hr>
 <p>Now we know how to remove the ambiguity in the grammar so Let’s rewrite our grammar again by applying the above principle to our grammar; we want <code>*</code> always to have higher precedence than <code>+</code>. For a grammar that does that, see Example. We usually want a left-associative expression within a single precedence level and, therefore, a left-associative grammar.</p>
-<p><img src="/chapter-02/desc-gram-sem.png" alt="Image"></p>
+<p><img src="./chapter-02/desc-gram-sem.png" alt="Image"></p>
 <ol>
 <li><code>expr + term</code> is different from <code>term + expr</code>. It controls<br>
 associativity (left or right)</li>
@@ -216,13 +216,13 @@ parse tree.</p>
 </blockquote>
 <p><code>expr -&gt; expr + term</code>, (left recursion of expr), it causes left associativity</p>
 <p>Let’s assume you want to parse 1+2+3 by using the above grammar.</p>
-<p><img src="/chapter-02/bd163583-61b0-4ebe-a9b8-5fa32b24cfc6_smallRaw.png" alt="Image"></p>
+<p><img src="./chapter-02/bd163583-61b0-4ebe-a9b8-5fa32b24cfc6_smallRaw.png" alt="Image"></p>
 <pre class=" language-csharp"><code class="prism  language-csharp">
 expr<span class="token operator">-</span><span class="token operator">&gt;</span>expr<span class="token operator">+</span>term
 expr <span class="token operator">-</span><span class="token operator">&gt;</span> term <span class="token operator">+</span> expr # <span class="token punctuation">(</span>right recursion of expr<span class="token punctuation">)</span><span class="token punctuation">,</span> it causes right associativity
 
 </code></pre>
-<p><img src="/chapter-02/f61cb50b-913e-46dc-88bb-b86fbf3f29a8_smallRaw.png" alt="Image"></p>
+<p><img src="./chapter-02/f61cb50b-913e-46dc-88bb-b86fbf3f29a8_smallRaw.png" alt="Image"></p>
 <pre class=" language-csharp"><code class="prism  language-csharp">expr<span class="token operator">-</span><span class="token operator">&gt;</span>term<span class="token operator">+</span>expr
 </code></pre>
 <h2 id="cfg-for-boolean">CFG for Boolean</h2>
