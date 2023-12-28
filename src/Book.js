@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { BrowserRouter as Router, Routes, Route, NavLink } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom"; // Change BrowserRouter to HashRouter
 import "./Book.css"; // Create a separate CSS file for styling
 
 // @ts-ignore
