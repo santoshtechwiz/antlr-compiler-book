@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/antlr-compiler-book/static/css/main.807ac3a9.css",
-    "main.js": "/antlr-compiler-book/static/js/main.0838dbd9.js",
+    "main.js": "/antlr-compiler-book/static/js/main.77c7d532.js",
     "static/js/787.6850ce87.chunk.js": "/antlr-compiler-book/static/js/787.6850ce87.chunk.js",
+    "static/media/chapter3.md": "/antlr-compiler-book/static/media/chapter3.6465246a17eeb1e31a95.md",
     "static/media/chapter2.md": "/antlr-compiler-book/static/media/chapter2.b82276a53c6f8bcd1bf6.md",
     "static/media/intro.md": "/antlr-compiler-book/static/media/intro.127cd5aca15a774f3560.md",
     "static/media/chapter1.md": "/antlr-compiler-book/static/media/chapter1.f7f33502654fda01712e.md",
     "index.html": "/antlr-compiler-book/index.html",
     "main.807ac3a9.css.map": "/antlr-compiler-book/static/css/main.807ac3a9.css.map",
-    "main.0838dbd9.js.map": "/antlr-compiler-book/static/js/main.0838dbd9.js.map",
+    "main.77c7d532.js.map": "/antlr-compiler-book/static/js/main.77c7d532.js.map",
     "787.6850ce87.chunk.js.map": "/antlr-compiler-book/static/js/787.6850ce87.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.807ac3a9.css",
-    "static/js/main.0838dbd9.js"
+    "static/js/main.77c7d532.js"
   ]
 }
