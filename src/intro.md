@@ -1,4 +1,4 @@
- <div class="stackedit__html"><h1 id="introduction">Introduction</h1>
+<h1 id="introduction">Introduction</h1>
 <h2 id="whats-in-this-book">What’s in this book?</h2>
 <p>“Create Compiler In C# Using ANTLR-Crash Course”  is  a  comprehensive  guide  for  C# developers  who  are  interested  in  leveraging  ANTLR  to  create  their  own  domain-specific  language (DSL), interpreter, or  programming  language. This  book  covers  all  the  essential  concepts  of  ANTLR  and  provides  a  hands-on  approach  to  building  a  complete  compiler  using  C#.</p>
 <p>Throughout  the  book, we  will  explore  the  fundamentals  of  ANTLR  and  its  integration  with  C#, allowing  you  to  gain  a  solid  understanding  of  the  underlying  principles  and  techniques  of  compiler  construction. The  code  examples  provided  in  the  book  are  designed  to  be  beginner-friendly, making  it  easier  for  readers  to  grasp  the  concepts  and  follow  along.</p>
@@ -455,4 +455,3 @@ Console<span class="token punctuation">.</span><span class="token function">Rese
 </code></pre>
 <h3 id="conclusion">Conclusion</h3>
 <p>SimpleCompiler is a straightforward compiler. It includes a REPL, which allows you to quickly test your code. You can easily write powerful programs with features like variable declaration, printing, scope, and type checking.</p>
-</div>

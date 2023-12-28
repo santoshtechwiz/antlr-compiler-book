@@ -15,6 +15,9 @@ import Chapter2 from "./chapter2.md";
 // @ts-ignore
 import Chapter3 from "./chapter3.md";
 
+// @ts-ignore
+import Chapter4 from "./chapter4.md";
+
 const Chapter = ({ title, content }) => (
   <section className="book-chapter" data-aos="fade-up">
     <h2 className="title">{title}</h2>
@@ -27,6 +30,7 @@ const Book = () => {
   const [chapter1, setChapter1] = useState("");
   const [chapter2, setChapter2] = useState("");
   const [chapter3, setChapter3] = useState("");
+  const [chapter4, setChapter4] = useState("");
 
   useEffect(() => {
     AOS.init({
@@ -53,6 +57,10 @@ const Book = () => {
       .then((response) => response.text())
       .then((data) => setChapter3(data))
       .catch((error) => console.error("Error fetching chapter2.md:", error));
+      fetch(Chapter4)
+      .then((response) => response.text())
+      .then((data) => setChapter4(data))
+      .catch((error) => console.error("Error fetching chapter2.md:", error));
   }, []);
 
   return (
@@ -61,12 +69,12 @@ const Book = () => {
         <nav className="book-nav">
          
           <NavLink to="/">Introduction</NavLink>
-          <NavLink to="/chapter1">Chapter 1</NavLink>
-          <NavLink to="/chapter2">Chapter 2</NavLink>
-          <NavLink to="/chapter3">Chapter 3</NavLink>
+          <NavLink to="/chapter1">Compiler Basics</NavLink>
+          <NavLink to="/chapter2">Grammars: Describing Syntax and Semantics</NavLink>
+          <NavLink to="/chapter3">Getting started with ANTLR</NavLink>
+          <NavLink to="/chapter4">Generate Code Using ANTLR</NavLink>
           <div className="buy-section">
-            <button className="buy-button">Buy Now</button>
-            <p className="price">$19.99</p>
+            <button className="buy-button">Buy Now($19.99)</button>
           </div>
         </nav>
 
@@ -87,6 +95,12 @@ const Book = () => {
               <Route
               path="/chapter3"
               element={<Chapter title="Chapter 3" content={chapter3} />}
+              
+            />
+             <Route
+              path="/chapter4"
+              element={<Chapter title="Chapter 4" content={chapter4} />}
+              
             />
           </Routes>
         </div>
