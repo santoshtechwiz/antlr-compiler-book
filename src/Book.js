@@ -56,8 +56,8 @@ const Book = () => {
       <div className="book-container">
         <nav className="book-nav">
           <NavLink to="/">Introduction</NavLink>
-          <NavLink to="/chapter1">Chapter 1</NavLink>
-          <NavLink to="/chapter2">Chapter 2</NavLink>
+          <NavLink to="/antlr-compiler-book//chapter1">Chapter 1</NavLink>
+          <NavLink to="/antlr-compiler-book//chapter2">Chapter 2</NavLink>
         </nav>
         <div className="book-content">
           <Routes>
