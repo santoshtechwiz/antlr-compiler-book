@@ -7,11 +7,13 @@ import { HashRouter as Router, Routes, Route, NavLink } from "react-router-dom";
 import "./Book.css"; // Create a separate CSS file for styling
 
 // @ts-ignore
-import Intro from "./intro.md";
+import Introduction from "./intro.md";
 // @ts-ignore
 import Chapter1 from "./chapter1.md";
 // @ts-ignore
 import Chapter2 from "./chapter2.md";
+// @ts-ignore
+import Chapter3 from "./chapter3.md";
 
 const Chapter = ({ title, content }) => (
   <section className="book-chapter" data-aos="fade-up">
@@ -22,8 +24,9 @@ const Chapter = ({ title, content }) => (
 
 const Book = () => {
   const [introContent, setIntroContent] = useState("");
-  const [chapter, setChapter] = useState("");
   const [chapter1, setChapter1] = useState("");
+  const [chapter2, setChapter2] = useState("");
+  const [chapter3, setChapter3] = useState("");
 
   useEffect(() => {
     AOS.init({
@@ -34,17 +37,21 @@ const Book = () => {
     });
 
     // Fetch content from intro.md
-    fetch(Intro)
+    fetch(Introduction)
       .then((response) => response.text())
       .then((data) => setIntroContent(data))
       .catch((error) => console.error("Error fetching intro.md:", error));
     fetch(Chapter1)
       .then((response) => response.text())
-      .then((data) => setChapter(data))
+      .then((data) => setChapter1(data))
       .catch((error) => console.error("Error fetching chapter1.md:", error));
     fetch(Chapter2)
       .then((response) => response.text())
-      .then((data) => setChapter1(data))
+      .then((data) => setChapter2(data))
+      .catch((error) => console.error("Error fetching chapter2.md:", error));
+      fetch(Chapter3)
+      .then((response) => response.text())
+      .then((data) => setChapter3(data))
       .catch((error) => console.error("Error fetching chapter2.md:", error));
   }, []);
 
@@ -56,6 +63,7 @@ const Book = () => {
           <NavLink to="/">Introduction</NavLink>
           <NavLink to="/chapter1">Chapter 1</NavLink>
           <NavLink to="/chapter2">Chapter 2</NavLink>
+          <NavLink to="/chapter3">Chapter 3</NavLink>
           <div className="buy-section">
             <button className="buy-button">Buy Now</button>
             <p className="price">$19.99</p>
@@ -70,18 +78,20 @@ const Book = () => {
             />
             <Route
               path="/chapter1"
-              element={<Chapter title="Chapter 1" content={chapter} />}
+              element={<Chapter title="Chapter 1" content={chapter1} />}
             />
             <Route
               path="/chapter2"
-              element={<Chapter title="Chapter 2" content={chapter1} />}
+              element={<Chapter title="Chapter 2" content={chapter2} />}
+            />
+              <Route
+              path="/chapter3"
+              element={<Chapter title="Chapter 3" content={chapter3} />}
             />
           </Routes>
         </div>
       </div>
-      <section className="book-buy" data-aos="fade-up">
-        <button>Buy Now</button>
-      </section>
+    
     </Router>
   );
 };
